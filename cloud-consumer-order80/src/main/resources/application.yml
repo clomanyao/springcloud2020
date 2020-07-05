@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-order-service
+  spring:
+    zikpin:
+      base-url: http://xxx.xxx.xxx.xxx:9411
+    sleuth:
+      sampler:
+      probability: 1
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka,http://eureka7001.com:7001/eureka

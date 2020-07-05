@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<<<<<<< HEAD
+<mapper namespace="com.cloneman.com.cloneman.com.cloneman.springcloud.dao.PaymentDao">
+=======
+<mapper namespace="com.cloneman.com.cloneman.springcloud.dao.PaymentDao">
+>>>>>>> 7a6e9c94be2a87ad850c8d0db9110d7bbed07393
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into payment(serial) value(#{serial})
+    </insert>
+
+<<<<<<< HEAD
+    <select id="queryPaymentById" resultType="com.cloneman.com.cloneman.com.cloneman.springcloud.entity.Payment">
+=======
+    <select id="queryPaymentById" resultType="com.cloneman.com.cloneman.springcloud.entity.Payment">
+>>>>>>> 7a6e9c94be2a87ad850c8d0db9110d7bbed07393
+        select * from payment where id =#{id}
+        <!--<if test="id!=null">
+            where id =#{id}
+        </if>-->
+    </select>
+</mapper>

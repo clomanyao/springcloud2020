@@ -1,0 +1,13 @@
+server:
+  port: 3377
+
+spring:
+  application:
+    name: cloudalibaba-config-center
+  cloud:
+    nacos:
+      config:
+        server-addr: 39.97.188.145:8848
+        group: dev
+        file-extension: yaml
+

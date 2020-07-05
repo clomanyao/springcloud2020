@@ -1,0 +1,12 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: cloud-payment-service
+  cloud:
+    consul:
+      host: xxx.xxx.xxx.xxx
+      discovery:
+        port: 8500
+        service-name: ${spring.application.name}

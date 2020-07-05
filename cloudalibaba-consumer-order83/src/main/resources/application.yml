@@ -1,0 +1,20 @@
+server:
+  port: 83
+
+spring:
+  application:
+    name: cloudalibaba-consumer-order-service
+  cloud:
+    nacos:
+      discovery:
+       # server-addr: 39.97.188.145:8848
+        server-addr: 39.97.188.145:8888
+
+spring-nacos:
+  provider-url: http://cloudalibaba-provider-payment-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
